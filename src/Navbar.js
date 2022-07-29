@@ -2,7 +2,8 @@ const Navbar = () => {
     return (
 
     
-    <nav className="allbar">
+    <nav className="navbar">
+      <h1>The Flow Blog</h1>
     
     <a href="/">Home</a>
     <br />
