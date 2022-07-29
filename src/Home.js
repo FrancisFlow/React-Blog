@@ -3,44 +3,36 @@ import { useState } from "react";
 
 const Home = () => {
 
-    const [power, setPower] = useState('Consistency');
+    const [blogs, setBlogs]= useState([
+        {
+            title: 'The best blogs in the world', id:1, body:'This is the way that the lord has made, we will rejoice and be glad in it'
+        },
 
-   
+        {title: 'The second best blog in the world', id:2, body:'This is the second best blog in the world'},
 
-    const handleClick = (e, name) => {
-        if  (name != undefined) {
-
-            name=name.toLowerCase();
-        }
-        else if (name == undefined || name==null)  {
-            name= " by default"
-        }
-        console.log('I have been clicked' + name, e);
-
-
-        }
+    {title: 'The third best blog in the world', id:3, body:'This is the third best blog in the world'},
+    ]
+    );
 
     return ( 
 
         <>
-        
-        <h2>Homepage by me</h2>
+        <div className="blogs">
 
-        <h2> My power is {power}</h2>
+            {
+                blogs.map((blog)=> (
 
-        <h2> Together with this, my power breeds {power}</h2>
+                <div className="things"  key={blog.id}> 
+                
+                <h2>{blog.title}</h2>
 
-        <button onClick={()=>{
-            setPower('Mastery')
-        }} ></button>
+                <h3>{blog.body}</h3>
+                </div>
 
-        <h2> This too is my power</h2>
-        
-        
-        <button onClick={handleClick}>
-            Do what?</button>
-
-        <button> By who? </button>
+                ))
+            }
+        </div>
+    
 
         </>
 
