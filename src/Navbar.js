@@ -6,7 +6,9 @@ const Navbar = () => {
       <h1>The Flow Blog</h1>
     
     <a href="/">Home</a>
+
     <br />
+    
     <a href= "/create">Create</a>
 
         </nav>
