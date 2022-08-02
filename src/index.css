@@ -53,3 +53,7 @@
   border-bottom : 1px solid #fafafa;
 
 }
+
+.blog-preview a{
+  text-decoration: none;
+}
