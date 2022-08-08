@@ -6,7 +6,17 @@ const Create = () => {
     const [title, setTitle]= useState('');
     const [blogBody, setBlogBody]= useState('');
     const [author, setAuthor]= useState('');
-
+    const handleSubmit= (e) => {
+        e.preventDefault();
+        const blog={title, blogBody, author}
+        fetch('http://localhost:8000/blogs/', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(blog)
+        }).then(()=>{
+            console.log("New blog created successfully")
+        })
+    }
 
     return ( 
 <>
@@ -14,7 +24,7 @@ const Create = () => {
 <div className="create">
     <h2>Create a new blog here!</h2>
 
-    <form>
+    <form onSubmit={handleSubmit} >
                     <label>
                         Blog Title:
                     </label>

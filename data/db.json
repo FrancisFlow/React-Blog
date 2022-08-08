@@ -1,27 +1,28 @@
-{"blogs" :[
-
-
+{
+  "blogs": [
     {
-        "title": "The best blogs in the world", 
-        "id":1,
-         "body":"This is the way that the lord has made, we will rejoice and be glad in it", 
-         "author": "Goliath"
+      "title": "The best blogs in the world",
+      "id": 1,
+      "body": "This is the way that the lord has made, we will rejoice and be glad in it",
+      "author": "Goliath"
     },
     {
-        "title": "The second best blogs in the world", 
-        "id":2, 
-        "body":"Rejoice and see peace flow like a river. We will rejoice and be glad in it", 
-        "author": "David"
+      "title": "The second best blogs in the world",
+      "id": 2,
+      "body": "Rejoice and see peace flow like a river. We will rejoice and be glad in it",
+      "author": "David"
     },
-
     {
-        "title": "The thirdd best blogs in the world",
-         "id":3, 
-         "body":"Have faith and know that my name is The Lord. Rejoice and see peace flow like a river. We will rejoice and be glad in it", 
-         "author": "Solomon"
+      "title": "The thirdd best blogs in the world",
+      "id": 3,
+      "body": "Have faith and know that my name is The Lord. Rejoice and see peace flow like a river. We will rejoice and be glad in it",
+      "author": "Solomon"
+    },
+    {
+      "title": "Kanada",
+      "blogBody": "Oh kanada, oh kanada, how ahappy are your blesingsls whtn the things go calling out. oh canada oh canada",
+      "author": "Bravo Johnny",
+      "id": 4
     }
-
-
-]
-
+  ]
 }
